@@ -1,1 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Interactiva Derecho</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<h1>⚖️ Malla Interactiva – Derecho</h1>
+
+<div class="malla">
+
+<!-- AÑO 1 -->
+<div class="anio">
+<h2>Año 1</h2>
+
+<div class="semestre">
+<h3>Periodo 1</h3>
+<button class="ramo" data-id="intro">Introducción al Derecho</button>
+<button class="ramo" data-id="intro_const">Introducción al Derecho Constitucional</button>
+<button class="ramo" data-id="romano">Derecho Romano</button>
+<button class="ramo" data-id="tecno">Tecnología e Innovación</button>
+</div>
+
+<div class="semestre">
+<h3>Periodo 2</h3>
+<button class="ramo locked" data-id="teoria_ley" data-prereq="intro">Teoría de la Ley y Sujetos de Derecho</button>
+<button class="ramo locked" data-id="filosofia" data-prereq="intro">Filosofía del Derecho</button>
+<button class="ramo locked" data-id="const1" data-prereq="intro_const">Derecho Constitucional I</button>
+<button class="ramo" data-id="economico">Derecho Económico</button>
+<button class="ramo" data-id="argumentacion">Argumentación Jurídica</button>
+<button class="ramo" data-id="ingles_basico">Inglés Básico</button>
+</div>
+</div>
+
+<!-- AÑO 2 -->
+<div class="anio">
+<h2>Año 2</h2>
+
+<div class="semestre">
+<h3>Periodo 1</h3>
+<button class="ramo locked" data-id="civil1" data-prereq="intro">Derecho Civil I</button>
+<button class="ramo locked" data-id="procesal1" data-prereq="intro">Derecho Procesal I</button>
+<button class="ramo locked" data-id="const2" data-prereq="const1">Derecho Constitucional II</button>
+<button class="ramo" data-id="etica">Ética Profesional</button>
+<button class="ramo locked" data-id="legislacion" data-prereq="economico">Legislación Económica</button>
+</div>
+
+<div class="semestre">
+<h3>Periodo 2</h3>
+<button class="ramo locked" data-id="civil2" data-prereq="civil1">Derecho Civil II</button>
+<button class="ramo locked" data-id="procesal2" data-prereq="procesal1">Derecho Procesal II</button>
+<button class="ramo locked" data-id="const3" data-prereq="const2">Derecho Constitucional III</button>
+<button class="ramo locked" data-id="teoria_derecho" data-prereq="teoria_ley">Teoría del Derecho</button>
+</div>
+</div>
+
+<!-- AÑO 3 -->
+<div class="anio">
+<h2>Año 3</h2>
+
+<div class="semestre">
+<h3>Periodo 1</h3>
+<button class="ramo locked" data-id="civil3" data-prereq="civil2">Derecho Civil III</button>
+<button class="ramo locked" data-id="procesal3" data-prereq="procesal2">Derecho Procesal III</button>
+<button class="ramo locked" data-id="laboral1" data-prereq="civil2">Derecho Laboral I</button>
+<button class="ramo" data-id="administrativo">Derecho Administrativo</button>
+<button class="ramo locked" data-id="penal1" data-prereq="intro">Derecho Penal I</button>
+<button class="ramo" data-id="sostenible">Desarrollo Sostenible</button>
+</div>
+
+<div class="semestre">
+<h3>Periodo 2</h3>
+<button class="ramo locked" data-id="civil4" data-prereq="civil3">Derecho Civil IV</button>
+<button class="ramo locked" data-id="procesal4" data-prereq="procesal3">Derecho Procesal IV</button>
+<button class="ramo locked" data-id="penal2" data-prereq="penal1">Derecho Penal II</button>
+<button class="ramo locked" data-id="laboral2" data-prereq="laboral1">Derecho Laboral II</button>
+<button class="ramo locked" data-id="litigacion" data-prereq="procesal3">Litigación</button>
+<button class="ramo" data-id="ingles_tecnico">Inglés Técnico</button>
+</div>
+</div>
+
+<!-- AÑO 4 -->
+<div class="anio">
+<h2>Año 4</h2>
+
+<div class="semestre">
+<h3>Periodo 1</h3>
+<button class="ramo locked" data-id="civil5" data-prereq="civil4">Derecho Civil V</button>
+<button class="ramo locked" data-id="procesal5" data-prereq="procesal4">Derecho Procesal V</button>
+<button class="ramo locked" data-id="comercial1" data-prereq="civil3">Derecho Comercial I</button>
+<button class="ramo locked" data-id="penal3" data-prereq="penal2">Derecho Penal III</button>
+<button class="ramo" data-id="internacional">Derecho Internacional Público</button>
+<button class="ramo" data-id="responsabilidad">Responsabilidad Social y Emprendimiento</button>
+</div>
+
+<div class="semestre">
+<h3>Periodo 2</h3>
+<button class="ramo locked" data-id="civil6" data-prereq="civil5">Derecho Civil VI</button>
+<button class="ramo locked" data-id="procesal6" data-prereq="procesal5">Derecho Procesal VI</button>
+<button class="ramo locked" data-id="comercial2" data-prereq="comercial1">Derecho Comercial II</button>
+<button class="ramo locked" data-id="tributario1" data-prereq="economico">Derecho Tributario I</button>
+<button class="ramo locked" data-id="clinica1" data-prereq="procesal4">Clínica Jurídica I</button>
+<button class="ramo" data-id="vida_laboral">Preparación para la Vida Laboral</button>
+<button class="ramo" data-id="seguridad">Seguridad Social</button>
+</div>
+</div>
+
+<!-- AÑO 5 -->
+<div class="anio">
+<h2>Año 5</h2>
+
+<div class="semestre">
+<h3>Periodo 1</h3>
+<button class="ramo locked" data-id="tributario2" data-prereq="tributario1">Derecho Tributario II</button>
+<button class="ramo locked" data-id="comercial3" data-prereq="comercial2">Derecho Comercial III</button>
+<button class="ramo locked" data-id="metodologia" data-prereq="clinica1">Metodología de la Investigación Jurídica</button>
+<button class="ramo locked" data-id="clinica2" data-prereq="clinica1">Clínica Jurídica II</button>
+<button class="ramo locked" data-id="examen1" data-prereq="clinica1">Preparación Examen de Grado I</button>
+<button class="ramo" data-id="prof1">Profundizado en Derecho I</button>
+</div>
+
+<div class="semestre">
+<h3>Periodo 2</h3>
+<button class="ramo locked" data-id="examen2" data-prereq="examen1">Preparación Examen de Grado II</button>
+<button class="ramo locked" data-id="prof2" data-prereq="prof1">Profundizado en Derecho II</button>
+<button class="ramo locked" data-id="tesis" data-prereq="metodologia">Seminario de Tesis</button>
+<button class="ramo" data-id="masc">Métodos Alternativos de Solución de Conflictos</button>
+<button class="ramo" data-id="electivo">Electivo Jurídico</button>
+</div>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
