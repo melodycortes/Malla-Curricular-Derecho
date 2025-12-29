@@ -1,1 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fff4f8;
+  text-align: center;
+}
 
+h1 {
+  color: #7b2cbf;
+}
+
+.malla {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.anio {
+  border: 3px solid #e0aaff;
+  border-radius: 20px;
+  padding: 15px;
+  background: #fde2ff;
+}
+
+.semestre {
+  background: #ffe5f0;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 10px;
+}
+
+.ramo {
+  display: block;
+  width: 100%;
+  margin: 6px 0;
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  background: #f7a1c4;
+  color: #4a004e;
+}
+
+.ramo.aprobado {
+  background: #9d4edd;
+  color: white;
+  text-decoration: line-through;
+}
+
+.ramo.locked {
+  background: #cfcfcf;
+  color: #666;
+  cursor: not-allowed;
+}
